@@ -1,20 +1,20 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonIcon, IonList, IonItem, IonLabel } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonLabel } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
+import './About.css';
 
-const Tab1: React.FC = () => {
+const About: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Groceries</IonTitle>
+          <IonTitle>About</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Groceries</IonTitle>
+            <IonTitle size="large">About</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonList>
@@ -30,4 +30,4 @@ const Tab1: React.FC = () => {
   );
 };
 
-export default Tab1;
+export default About;

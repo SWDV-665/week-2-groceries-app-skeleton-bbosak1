@@ -11,9 +11,9 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { cartOutline, informationCircle, peopleOutline } from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
+import Groceries from './pages/Groceries';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -39,21 +39,21 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route path="/tab1" component={Tab1} exact={true} />
-          <Route path="/tab2" component={Tab2} exact={true} />
-          <Route path="/tab3" component={Tab3} />
-          <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
+          <Route path="/groceries" component={Groceries} exact={true} />
+          <Route path="/about" component={About} exact={true} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/" render={() => <Redirect to="/groceries" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+          <IonTabButton tab="groceries" href="/groceries">
             <IonIcon icon={cartOutline} />
             <IonLabel>Groceries</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="about" href="/about">
             <IonIcon icon={informationCircle} />
             <IonLabel>About</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="contact" href="/contact">
             <IonIcon icon={peopleOutline} />
             <IonLabel>Contact</IonLabel>
           </IonTabButton>
