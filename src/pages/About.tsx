@@ -22,7 +22,7 @@ const About: React.FC = () => {
             <IonLabel>Brad Bosak</IonLabel>
           </IonItem>
           <IonItem>
-            <IonLabel>012345</IonLabel>
+            <IonLabel>0542606</IonLabel>
           </IonItem>
         </IonList>
       </IonContent>
